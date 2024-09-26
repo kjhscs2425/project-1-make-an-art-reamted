@@ -1,28 +1,9 @@
 import turtle
 
-
 turtle.tracer(0,0)
-turtle.speed(10)
+#this area is compleatly usless, dont pay attention. its my testing area. also I was bored so
 
-#mountain drawings
-#boundary 
-outside=700
-turtle.up()
-turtle.goto(0, 0)
-turtle.setheading(135)
-turtle.forward(500)
-turtle.right(45)
-turtle.down()
-for i in range(4):
-   turtle.right(90)
-   turtle.forward(outside)
-   
-#DONT MAKES THIS NUMBER SMALLER, ONLY BIGGER (or you can try and figger out my code)
-lakediamater=114
-turtle.up()
-turtle.goto(15,-55)
-turtle.down()
-turtle.dot(lakediamater)
+
 
 def mountain1(x, y):
    turtle.up()
@@ -180,11 +161,11 @@ def keep(x, y):
    turtle.forward(19)
    #finishing
 def tree1():
+
    for i in range(360):
         turtle.forward(0.1)
         turtle.right(1)
 def foresttool():
-   #this will draw three groups of 4 trees
    for i in range(3):
     for e in range(4):
         turtle.down()
@@ -209,7 +190,10 @@ def riverstraight():
    turtle.left(90)
    turtle.forward(25)
    turtle.down()
+   
 def riverturn():
+  
+    
    for i in range(90):
       turtle.forward(0.3)
       turtle.left(1)
@@ -229,6 +213,8 @@ def riverturn():
    turtle.right(90)
    turtle.forward(10)
    turtle.down()
+   turtle.left(90)
+      
 def mountaintool1():
     #all you need to start a chain with mountain
    turtle.setheading(90)
@@ -255,7 +241,9 @@ def mountaintool3():
    turtle.right(90)
    turtle.forward(10)
    turtle.down()
-   turtle.setheading(180)    
+   turtle.setheading(180)
+
+
 def tree2(x, y):
    turtle.up()
    turtle.goto(x, y)
@@ -263,11 +251,9 @@ def tree2(x, y):
    for i in range(360):
         turtle.forward(0.1)
         turtle.right(1)
-def g():
-   #im really tierd of writing this line of code
+def g():  
    turtle.setheading(0)
 def signature(x, y):
-   #check the top right
    turtle.up()
    turtle.goto(x, y)
    turtle.down()
@@ -286,140 +272,24 @@ def signature(x, y):
    turtle.left(135)
    turtle.forward(6.05)
 def goto(x, y):
-   #saves three lines of code
    turtle.up()
    turtle.goto(x, y)
    turtle.down()
 
-g()
-mountain1(43, 87)
-mountaintool1()
-mountain2()
-mountaintool1()
-mountain2()
-g()
-riverstraight()
-riverturn()
-turtle.setheading(90)
-for i in range(2):
-   riverstraight()
-riverturn()
-turtle.setheading(180)
-for i in range(7):
-   riverstraight()
-riverturn()
-turtle.setheading(270)
-for i in range(6):
-   riverstraight()
-goto(-300, 300)
 
-foresttool()
-tree2(200, -100)
-g()
-mountain1(-200, 200)
-for i in range(3):
-   mountaintool1()
-   mountain2()
-g()
-mountain1(-200,-200)
-for i in range(2):
-   mountaintool1()
-   mountain2()
-g()
-keep(100,-234)
-g()
-keep(-200, 155)
-g()
-keep(100, 300)
-g()
-keep(-155, -256)
-g()
-mountain1(-100,0)
-mountaintool2()
-mountain3()
-mountaintool3()
-mountain3()
 
-turtle.setheading(270)
-for i in range(2):
-   riverstraight()
-riverturn()
-g()
-for i in range(5):
-   riverstraight()
-mountain1(200, -150)
-g()
-mountain1(245, -250)
-tree2(-100, 155)
-tree2(100, 256)
-goto(-300, 15)
-foresttool()
-goto(-200, -245)
-turtle.setheading(226)
-foresttool()
-tree2(-92, 291)
-tree2(88, -120)
-goto(150, 50)
-foresttool()
-tree2(200, 50)
-tree2(175, 78)
-g()
-mountain1(150, -30)
-mountaintool1()
-mountain2()
-tree2(300, 300)
-g()
-keep(250, 300)
-g()
-mountain1(-10, -300)
-goto(200, -250)
-foresttool()
-goto(0, -150)
-foresttool()
-g()
-mountain1(-290, 130)
-goto(-100, -250)
-foresttool()
-goto(-250, -100)
-foresttool()
-g()
-mountain1(-300, -250)
-mountaintool2()
-mountain3()
-g()
-mountain1(100, -100)
-goto(100, -160)
-turtle.setheading(234)
-foresttool()
-g()
-mountain1(100, 200)
-for i in range(2):
-   mountaintool1()
-   mountain2()
-goto(-250, 100)
-foresttool()
-turtle.setheading(254)
-goto(270, -20)
-foresttool()
-goto(-150, 120)
-g()
-foresttool()
-goto(290, 100)
-turtle.setheading(90)
-foresttool()
 
-signature(310, 310)
- 
+
+
+
 turtle.up()
 
-turtle.goto(10000,1090)
+turtle.goto(1000,1000)
 
 
 turtle.update()
 
 
+
+
 turtle.exitonclick()
-
-
-
- 
