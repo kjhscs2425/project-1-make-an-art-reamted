@@ -1,8 +1,11 @@
 import turtle
 
 turtle.tracer(0,0)
+turtle.speed(3)
 #this area is compleatly usless, dont pay attention. its my testing area. also I was bored so
 
+#this bassicly just changes how dense the forests are, you can make it go wild if you change it above 7, 1-5 makes some cool changes
+density = 5
 
 
 def mountain1(x, y):
@@ -172,7 +175,7 @@ def foresttool():
         tree1()
         turtle.left(90)
         turtle.up()
-        turtle.forward((5*((e+3)/2))/1.29)
+        turtle.forward((5*((e+density)/2))/1.29)
     turtle.up()
     turtle.forward(28)
 def riverstraight():
@@ -282,14 +285,20 @@ def goto(x, y):
 
 
 
+
+
+
+
+         
+
+
+
 turtle.up()
 
 turtle.goto(1000,1000)
 
 
 turtle.update()
-
-
 
 
 turtle.exitonclick()

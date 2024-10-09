@@ -2,25 +2,24 @@ import turtle
 
 
 turtle.tracer(0,0)
-turtle.speed(10)
-
+turtle.speed(10000)
+#this bassicly just changes how dense the forests are, you can make it go wild if you change it above 7, 1-5 makes some cool changes
+density = 4
 #mountain drawings
 #boundary 
 outside=700
 turtle.up()
-turtle.goto(0, 0)
-turtle.setheading(135)
-turtle.forward(500)
-turtle.right(45)
+turtle.goto(350,350)
 turtle.down()
+turtle.setheading(270)
 for i in range(4):
-   turtle.right(90)
    turtle.forward(outside)
-   
-#DONT MAKES THIS NUMBER SMALLER, ONLY BIGGER (or you can try and figger out my code)
-lakediamater=114
+   turtle.right(90)
+
+#the big thing in the middle is supposed to be a lake, this changes the size of it, 134 is the best number for it
+lakediamater=134
 turtle.up()
-turtle.goto(15,-55)
+turtle.goto(20,-58)
 turtle.down()
 turtle.dot(lakediamater)
 
@@ -191,7 +190,7 @@ def foresttool():
         tree1()
         turtle.left(90)
         turtle.up()
-        turtle.forward((5*((e+3)/2))/1.29)
+        turtle.forward((5*((e+density)/2))/1.29)
     turtle.up()
     turtle.forward(28)
 def riverstraight():
@@ -309,7 +308,7 @@ for i in range(7):
    riverstraight()
 riverturn()
 turtle.setheading(270)
-for i in range(6):
+for i in range(8):
    riverstraight()
 goto(-300, 300)
 
@@ -345,7 +344,7 @@ for i in range(2):
    riverstraight()
 riverturn()
 g()
-for i in range(5):
+for i in range(7):
    riverstraight()
 mountain1(200, -150)
 g()
